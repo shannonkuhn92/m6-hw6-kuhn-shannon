@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: url('../images/background.png');
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: whitesmoke;
+    border-bottom: 3px solid darkslateblue;
+}
+
+header nav, body > .container {
+    display: flex;
+    margin: 0 15px;
+}
+
+body > .container {
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-decoration: none;
+    margin-right: auto;
+    padding: 15px;
+    color: lightsteelblue;
+    background-color: darkslateblue;
+    font-size: 20pt;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 15px 5px;
+    color: darkslateblue;
+    font-size: 18pt;
+    border-right: darkslateblue;
+}
+
+.align1 {
+    margin-right: auto;
+    max-width: 70%;
+}
+
+h1 {
+    margin: 20px 0;
+    color: darkblue;
+    border-bottom: 2px solid darkslateblue;
+}
+
+main h1 {
+    font-size: 20pt;
+}
+
+aside h1 {
+    font-size: 14pt;
+    text-align: center;
+}
+
+article {
+    padding: 5px;
+    background-color: whitesmoke;
+    box-sizing: content-box;
+}
+
+p {
+    margin: 20px 0;
+    line-height: 120%;
+}
+
+article > img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    box-shadow: darkslategray 1px 1px 10px;
+}
+
+.align2 {
+    margin-left: auto;
+}
+
+aside {
+    padding: 12px;
+    box-sizing: content-box;
+    background-color: whitesmoke;
+}
+
+aside a {
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+aside a > img {
+    display: inline-block;
+    box-shadow: darkslategrey 1px 1px 10px;
+}
+
+/* clearfix */
+.container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+footer {
+    background-color: darkslateblue;
+    color: lightsteelblue;
+    text-align: center;
+    margin-top: auto;
+    padding: 15px 0;
+}
